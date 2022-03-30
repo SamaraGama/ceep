@@ -22,7 +22,7 @@ export class FormularioCadastro extends Component {
   }
   render() {
     return (
-      <form className="form-cadastro">
+      <form className="form-cadastro" onSubmit={this._criarNota.bind(this)}>
         <input
           type="text"
           placeholder="Título"
